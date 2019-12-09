@@ -1161,24 +1161,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FOX ONE\\.nuget\\packages\\": {},
+    "C:\\Users\\CDS13\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.iOS\\PokeApi.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.iOS\\PokeApi.iOS.csproj",
       "projectName": "PokeApi.iOS",
-      "projectPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.iOS\\PokeApi.iOS.csproj",
-      "packagesPath": "C:\\Users\\FOX ONE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.iOS\\obj\\",
+      "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.iOS\\PokeApi.iOS.csproj",
+      "packagesPath": "C:\\Users\\CDS13\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\FOX ONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CDS13\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1192,8 +1192,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
-              "projectPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
+            "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
+              "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
             }
           }
         }

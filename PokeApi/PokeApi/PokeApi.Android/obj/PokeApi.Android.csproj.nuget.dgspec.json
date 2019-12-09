@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj": {}
+    "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj": {
+    "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
+        "projectUniqueName": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
         "projectName": "PokeApi.Android",
-        "projectPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
-        "packagesPath": "C:\\Users\\FOX ONE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi.Android\\obj\\",
+        "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
+        "packagesPath": "C:\\Users\\CDS13\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\FOX ONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CDS13\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
-                "projectPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
+              "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
+                "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
               }
             }
           }
@@ -78,20 +78,21 @@
         }
       }
     },
-    "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
+    "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
+        "projectUniqueName": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
         "projectName": "PokeApi",
-        "projectPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
-        "packagesPath": "C:\\Users\\FOX ONE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FOX ONE\\source\\repos\\PokeApi\\PokeApi\\PokeApi\\obj\\",
+        "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
+        "packagesPath": "C:\\Users\\CDS13\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FOX ONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CDS13\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

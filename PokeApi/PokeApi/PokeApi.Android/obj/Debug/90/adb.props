@@ -1,2 +1,2 @@
-AdbTarget=-s 5XJRX19118033107
+AdbTarget=-s emulator-5554
 AdbOptions=

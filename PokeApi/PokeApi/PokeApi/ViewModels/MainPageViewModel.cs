@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PokeApi.Models;
+using PokeApi.Services;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -16,28 +17,29 @@ namespace PokeApi.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        private string _nombre;
-        private string _url;
-        private ObservableCollection<Pokemon> items;
+
+        private bool isRefreshing;
+        private ObservableCollection<pkmn> items;
         private IPageDialogService _dialogService;
+        private ApiService api;
+        private pkmn pokemon;
 
-
-        public string nombre
-        {
-            get { return _nombre; }
-            set { SetProperty(ref _nombre, value); }
-        }
-
-        public string url
-        {
-            get { return _url; }
-            set { SetProperty(ref _url, value); }
-        }
-
-        public ObservableCollection<Pokemon> Items
+        public ObservableCollection<pkmn> Items
         {
             get { return items; }
             set { SetProperty(ref items, value); }
+        }
+
+        public bool IsRefreshing
+        {
+            get { return isRefreshing; }
+            set { SetProperty(ref isRefreshing, value); }
+        }
+
+        public pkmn Pokemon
+        {
+            get { return pokemon; }
+            set { SetProperty(ref pokemon, value); }
         }
 
         public MainPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
@@ -45,33 +47,15 @@ namespace PokeApi.ViewModels
         {
             Title = "Main Page";
             _dialogService = dialogService;
-            GetList();
+            api = new ApiService();
+            LoadData();
         }
 
-        private async void GetList()
+        public async void LoadData()
         {
-            try
-            {
-                var url = "https://pokeapi.co/api/v2/pokemon";
-                HttpClient client = new HttpClient();
-                HttpResponseMessage connect = await client.GetAsync(url);
-
-                if (connect.StatusCode == HttpStatusCode.OK)
-                {
-                    var response = await client.GetStringAsync(url);
-                    var lista = JsonConvert.DeserializeObject<List<Pokemon>>(response);
-                    Items = new ObservableCollection<Pokemon>(lista);
-                }
-                else
-                {
-                    await _dialogService.DisplayAlertAsync("Error", "Ocurrio un error", "ok");
-                }
-
-            }
-            catch (Exception ex)
-            {
-                await _dialogService.DisplayAlertAsync("Error", "Excepcion: " + ex, "ok");
-            }
+            IsRefreshing = true;
+            Items = await api.GetPkmns();
+            IsRefreshing = false;
         }
     }
 }
