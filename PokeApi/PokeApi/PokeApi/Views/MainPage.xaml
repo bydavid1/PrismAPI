@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokeApi.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout>
+        <Label Text="Lista de pokemons" HorizontalOptions="CenterAndExpand"/>
+        <ListView ItemsSource="{Binding Items}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout>
+                                <Image Source="{Binding url}" Aspect="AspectFit" HeightRequest="200" WidthRequest="200"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding name}" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
