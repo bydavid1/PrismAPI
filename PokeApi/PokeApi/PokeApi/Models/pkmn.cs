@@ -4,6 +4,7 @@ using System.Text;
 
 namespace PokeApi.Models
 {
+
     public class pkmn
     {
         public List<Ability> abilities { get; set; }

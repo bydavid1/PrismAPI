@@ -2,30 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PokeApi.Views.MainPage"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:flistview="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             BackgroundColor="#15202b"
              Title="{Binding Title}">
 
     <StackLayout>
-        <Label Text="Lista de pokemons" HorizontalOptions="CenterAndExpand"/>
-        <ListView ItemsSource="{Binding Items}"  
+        <flistview:FlowListView  
+                  FlowItemsSource="{Binding Items}"  
                   IsPullToRefreshEnabled="True"
+                  FlowColumnCount="2"
                   IsRefreshing="{Binding IsRefreshing}"
+                  FlowItemTappedCommand="{Binding OnTapped}"
+                  FlowLastTappedItem="{Binding Pokemon,Mode=TwoWay}"
+                  HasUnevenRows="True"
                   RefreshCommand="{Binding RefreshingCommand}">
-            <ListView.ItemTemplate>
+            <flistview:FlowListView.FlowColumnTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="2">
-                            <Frame HasShadow="True" CornerRadius="10">
-                                <StackLayout Orientation="Vertical">
-                                    <Image Source="{Binding sprites.front_default}" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"/>
-                                    <Label Text="{Binding name}" VerticalOptions="Center" FontSize="Small" HorizontalOptions="Center"/>
-                                </StackLayout>
-                            </Frame>
-                            <BoxView HeightRequest="1"/>
-                        </StackLayout>
-                    </ViewCell>
+                    <StackLayout Padding="2">
+                        <Frame HasShadow="True" CornerRadius="10" BackgroundColor="#192734">
+                            <StackLayout>
+                                <ffimage:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                                          WidthRequest="100" HeightRequest="100"
+                                          DownsampleToViewSize="true"
+                                          LoadingPlaceholder="https://cdn.dribbble.com/users/3337757/screenshots/6825268/076_-loading_animated_dribbble_copy.gif"
+                                          Source = "{Binding sprites.front_default}">
+                                </ffimage:CachedImage>
+                                <Label Text="{Binding name}" VerticalOptions="Center" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </flistview:FlowListView.FlowColumnTemplate>
+        </flistview:FlowListView>
     </StackLayout>
 
 </ContentPage>

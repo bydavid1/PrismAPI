@@ -1,4 +1,7 @@
+FFImageLoading.Forms.Platform
+FFImageLoading.Platform
 FormsViewGroup
+GalaSoft.MvvmLight.Platform
 Prism.Forms
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime

@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {}
+    "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
+    "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
+        "projectUniqueName": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
         "projectName": "PokeApi",
-        "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
-        "packagesPath": "C:\\Users\\CDS13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\obj\\",
+        "projectPath": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj",
+        "packagesPath": "C:\\Users\\FOX ONE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\CDS13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FOX ONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -43,6 +42,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "DLToolkit.Forms.Controls.FlowListView": {
+              "target": "Package",
+              "version": "[2.0.11, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -56,6 +63,10 @@
             "Prism.DryIoc.Forms": {
               "target": "Package",
               "version": "[7.2.0.1367, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
             },
             "Xamarin.Forms": {
               "target": "Package",

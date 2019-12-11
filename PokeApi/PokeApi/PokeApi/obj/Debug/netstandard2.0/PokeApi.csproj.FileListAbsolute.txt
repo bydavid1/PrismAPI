@@ -20,3 +20,15 @@ C:\Users\CDS13\Documents\GitHub\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netst
 C:\Users\CDS13\Documents\GitHub\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netstandard2.0\PokeApi.dll
 C:\Users\CDS13\Documents\GitHub\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netstandard2.0\PokeApi.pdb
 C:\Users\CDS13\Documents\GitHub\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netstandard2.0\PokeApi.deps.json
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netstandard2.0\PokeApi.dll
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\bin\Debug\netstandard2.0\PokeApi.pdb
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\PokeApi.csprojAssemblyReference.cache
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\PokeApi.AssemblyInfoInputs.cache
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\PokeApi.AssemblyInfo.cs
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\PokeApi.dll
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\PokeApi.pdb
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\Views\DetailPage.xaml.g.cs
+C:\Users\FOX ONE\Documents\PrismApp\PrismAPI\PokeApi\PokeApi\PokeApi\obj\Debug\netstandard2.0\XamlC.stamp

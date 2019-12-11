@@ -4,6 +4,7 @@ using PokeApi.ViewModels;
 using PokeApi.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DLToolkit.Forms.Controls;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PokeApi
@@ -22,7 +23,7 @@ namespace PokeApi
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
+            FlowListView.Init();
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
@@ -30,6 +31,7 @@ namespace PokeApi
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<DetailPage, DetailPageViewModel>();
         }
     }
 }

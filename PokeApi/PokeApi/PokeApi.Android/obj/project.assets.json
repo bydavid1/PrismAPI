@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "CommonServiceLocator/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6482"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
+        }
+      },
       "DryIoc.dll/4.0.4": {
         "type": "package",
         "dependencies": {
@@ -12,6 +33,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/DryIoc.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.2"
+        },
+        "compile": {
+          "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/monoandroid1/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/monoandroid1/GalaSoft.MvvmLight.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -851,6 +888,32 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {},
+          "lib/MonoAndroid10/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {},
+          "lib/MonoAndroid10/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Forms.Platform.dll": {},
+          "lib/MonoAndroid10/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Forms.Platform.dll": {},
+          "lib/MonoAndroid10/FFImageLoading.Forms.dll": {}
+        }
+      },
       "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "dependencies": {
@@ -884,8 +947,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DLToolkit.Forms.Controls.FlowListView": "2.0.11",
+          "MvvmLightLibs": "5.4.1.1",
           "Newtonsoft.Json": "12.0.3",
           "Prism.DryIoc.Forms": "7.2.0.1367",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -898,6 +964,36 @@
     }
   },
   "libraries": {
+    "CommonServiceLocator/2.0.2": {
+      "sha512": "OeAz2cDGiQuaxpJ2pUm1xyZyklT2HgP5LHoumI0o/pcXdTweJMjKHu92JKa33pZRCrRI0DdPcE5MGHk6GCpDMQ==",
+      "type": "package",
+      "path": "commonservicelocator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.2.0.2.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
+      ]
+    },
+    "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+      "sha512": "n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "type": "package",
+      "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512",
+        "dltoolkit.forms.controls.flowlistview.nuspec",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.xml"
+      ]
+    },
     "DryIoc.dll/4.0.4": {
       "sha512": "U0eE5DMRwPi6vcLvp4gno+W+yi85EE7TklgQNwdyH+YFHpY/CQ/P8VZYfY/6Jmwr9t7YyknYdg5XsCDDCVxikg==",
       "type": "package",
@@ -925,6 +1021,126 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/DryIoc.xml",
         "lib/portable-net45+win8+wp8+wpa81/DryIoc.dll",
         "lib/portable-net45+win8+wp8+wpa81/DryIoc.xml"
+      ]
+    },
+    "MvvmLightLibs/5.4.1.1": {
+      "sha512": "xYpVzOYnIz/M6T0pdc3w5t0vrt2ZKspSS+CZjQ+pZE+5yHv9qXSWkncHJXb6D7Egstalso4ivnIUkA1xEClViw==",
+      "type": "package",
+      "path": "mvvmlightlibs/5.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL5/GalaSoft.MvvmLight.dll",
+        "lib/SL5/GalaSoft.MvvmLight.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net35/GalaSoft.MvvmLight.dll",
+        "lib/net35/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.xml",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml",
+        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net40/GalaSoft.MvvmLight.dll",
+        "lib/net40/GalaSoft.MvvmLight.pdb",
+        "lib/net40/GalaSoft.MvvmLight.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
+        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pri",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/windows81/GalaSoft.MvvmLight.dll",
+        "lib/windows81/GalaSoft.MvvmLight.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp8/GalaSoft.MvvmLight.dll",
+        "lib/wp8/GalaSoft.MvvmLight.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.xml",
+        "lib/wp8/System.Windows.Interactivity.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp81/GalaSoft.MvvmLight.dll",
+        "lib/wp81/GalaSoft.MvvmLight.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.xml",
+        "lib/wp81/System.Windows.Interactivity.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/wpa81/GalaSoft.MvvmLight.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "mvvmlightlibs.5.4.1.1.nupkg.sha512",
+        "mvvmlightlibs.nuspec"
       ]
     },
     "Newtonsoft.Json/12.0.3": {
@@ -1842,6 +2058,116 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
+    "Xamarin.FFImageLoading/2.4.11.982": {
+      "sha512": "M0sNIQgUPs+le6C2TS4RmZQAURnzaRVizRtnZIZ6/1//qGcEAtEXAGt/tBJz6I1zlP6XlMxq8io6b4sjFP5N9Q==",
+      "type": "package",
+      "path": "xamarin.ffimageloading/2.4.11.982",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/FFImageLoading.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Platform.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.dll",
+        "lib/MonoAndroid10/FFImageLoading.pdb",
+        "lib/MonoAndroid10/FFImageLoading.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.xml",
+        "lib/netstandard1.0/FFImageLoading.Platform.dll",
+        "lib/netstandard1.0/FFImageLoading.Platform.xml",
+        "lib/netstandard1.0/FFImageLoading.dll",
+        "lib/netstandard1.0/FFImageLoading.pdb",
+        "lib/netstandard1.0/FFImageLoading.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.xml",
+        "lib/tizen40/FFImageLoading.Platform.dll",
+        "lib/tizen40/FFImageLoading.Platform.pdb",
+        "lib/tizen40/FFImageLoading.Platform.xml",
+        "lib/tizen40/FFImageLoading.dll",
+        "lib/tizen40/FFImageLoading.pdb",
+        "lib/tizen40/FFImageLoading.xml",
+        "lib/uap/FFImageLoading.Platform.dll",
+        "lib/uap/FFImageLoading.Platform.pdb",
+        "lib/uap/FFImageLoading.Platform.xml",
+        "lib/uap/FFImageLoading.dll",
+        "lib/uap/FFImageLoading.pdb",
+        "lib/uap/FFImageLoading.xml",
+        "lib/win81/FFImageLoading.Platform.dll",
+        "lib/win81/FFImageLoading.Platform.pdb",
+        "lib/win81/FFImageLoading.Platform.xml",
+        "lib/win81/FFImageLoading.dll",
+        "lib/win81/FFImageLoading.pdb",
+        "lib/win81/FFImageLoading.xml",
+        "lib/wpa81/FFImageLoading.Platform.dll",
+        "lib/wpa81/FFImageLoading.Platform.pdb",
+        "lib/wpa81/FFImageLoading.Platform.xml",
+        "lib/wpa81/FFImageLoading.dll",
+        "lib/wpa81/FFImageLoading.pdb",
+        "lib/wpa81/FFImageLoading.xml",
+        "xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+        "xamarin.ffimageloading.nuspec"
+      ]
+    },
+    "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+      "sha512": "7X4t3J1wJj0/0o8+vd91hzSYlrqEeMFC7Mj+0T8O+fcbRSHo/c+QbWscEQiT4AaKCwyO709xq+7aY2XXbK/H7g==",
+      "type": "package",
+      "path": "xamarin.ffimageloading.forms/2.4.11.982",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.Forms.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Forms.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.xml",
+        "lib/netstandard1.0/FFImageLoading.Forms.dll",
+        "lib/netstandard1.0/FFImageLoading.Forms.pdb",
+        "lib/netstandard1.0/FFImageLoading.Forms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.xml",
+        "lib/tizen40/FFImageLoading.Forms.Platform.dll",
+        "lib/tizen40/FFImageLoading.Forms.Platform.pdb",
+        "lib/tizen40/FFImageLoading.Forms.Platform.xml",
+        "lib/tizen40/FFImageLoading.Forms.dll",
+        "lib/tizen40/FFImageLoading.Forms.pdb",
+        "lib/tizen40/FFImageLoading.Forms.xml",
+        "lib/uap/FFImageLoading.Forms.Platform.dll",
+        "lib/uap/FFImageLoading.Forms.Platform.pdb",
+        "lib/uap/FFImageLoading.Forms.Platform.xml",
+        "lib/uap/FFImageLoading.Forms.dll",
+        "lib/uap/FFImageLoading.Forms.pdb",
+        "lib/uap/FFImageLoading.Forms.xml",
+        "xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+        "xamarin.ffimageloading.forms.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.6.0.344457": {
       "sha512": "7IffIKgL0fmgbfCLKzXaFKJ7uOueKiz/BIgmAG1Z5WMn+vMKeALe5GgRs3Uddo670VzllIHWkNEZD3lG+e02bw==",
       "type": "package",
@@ -2015,6 +2341,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "DLToolkit.Forms.Controls.FlowListView >= 2.0.11",
       "PokeApi >= 1.0.0",
       "Prism.DryIoc.Forms >= 7.2.0.1367",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
@@ -2023,28 +2350,29 @@
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.1",
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
+      "Xamarin.FFImageLoading.Forms >= 2.4.11.982",
       "Xamarin.Forms >= 3.6.0.344457"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CDS13\\.nuget\\packages\\": {},
+    "C:\\Users\\FOX ONE\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
+      "projectUniqueName": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
       "projectName": "PokeApi.Android",
-      "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
-      "packagesPath": "C:\\Users\\CDS13\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\obj\\",
+      "projectPath": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\PokeApi.Android.csproj",
+      "packagesPath": "C:\\Users\\FOX ONE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\CDS13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FOX ONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2058,8 +2386,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
-              "projectPath": "C:\\Users\\CDS13\\Documents\\GitHub\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
+            "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj": {
+              "projectPath": "C:\\Users\\FOX ONE\\Documents\\PrismApp\\PrismAPI\\PokeApi\\PokeApi\\PokeApi\\PokeApi.csproj"
             }
           }
         }
@@ -2068,6 +2396,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "DLToolkit.Forms.Controls.FlowListView": {
+            "target": "Package",
+            "version": "[2.0.11, )"
+          },
           "Prism.DryIoc.Forms": {
             "target": "Package",
             "version": "[7.2.0.1367, )"
@@ -2095,6 +2427,10 @@
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
             "version": "[28.0.0.1, )"
+          },
+          "Xamarin.FFImageLoading.Forms": {
+            "target": "Package",
+            "version": "[2.4.11.982, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
